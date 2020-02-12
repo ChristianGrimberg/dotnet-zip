@@ -4,6 +4,10 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>dotnet_zip</RootNamespace>
+    <Description>Zip Console App</Description>
+    <Authors>Christian Grimberg</Authors>
+    <Product>ZipCoreApp</Product>
+    <PackageId>ZipCoreApp</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

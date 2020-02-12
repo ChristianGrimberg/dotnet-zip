@@ -28,6 +28,8 @@ namespace dotnet_zip
             }
             catch (System.Exception ex)
             {
+                Console.WriteLine("Se efectua el registro del error en archivo de log.");
+
                 LogManager.GetCurrentClassLogger().Error(ex.Message);
             }
 
