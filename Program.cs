@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO.Compression;
+using NLog;
 
 namespace dotnet_zip
 {
@@ -19,7 +20,29 @@ namespace dotnet_zip
             source = args[0];
             target = args[1];
 
-            ZipFile.CreateFromDirectory(source, target);
+            ConfigureLog();
+
+            try
+            {
+                ZipFile.CreateFromDirectory(source, target);
+            }
+            catch (System.Exception ex)
+            {
+                LogManager.GetCurrentClassLogger().Error(ex.Message);
+            }
+
+            return;
+        }
+
+        private static void ConfigureLog()
+        {
+            var config = new NLog.Config.LoggingConfiguration();
+
+            var logFile = new NLog.Targets.FileTarget("logfile") {FileName = "Error.log"};
+
+            config.AddRule(LogLevel.Debug, LogLevel.Fatal, logFile);
+
+            NLog.LogManager.Configuration = config;
         }
     }
 }

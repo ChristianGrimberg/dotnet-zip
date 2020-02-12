@@ -10,12 +10,12 @@ This app is development with .NET Core 3.1 Framework.
     ```bash
     git clone https://github.com/ChristianGrimberg/dotnet-zip.git
     ```
+* Add Nlog Package with NuGet to your local copy of this repo
+    ```bash
+    cd dotnet-zip/
+    dotnet add package NLog
+    ```
 * To test this app, run this command:
     ```bash
     dotnet run <source> <target>.zip
-    ```
-### Optional steps
-* Add Nlog Package to your local copy of this repo
-    ```bash
-    dotnet add package NLog
     ```
