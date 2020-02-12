@@ -15,7 +15,28 @@ This app is development with .NET Core 3.1 Framework.
     cd dotnet-zip/
     dotnet add package NLog
     ```
-* To test this app, run this command:
+* To build to test if works on your system:
+    ```bash
+    dotnet build
+    ```
+* To run this app type this command:
     ```bash
     dotnet run <source> <target>.zip
+    ```
+### Optional steps
+* To remove the Nlog package:
+    ```bash
+    dotnet remove package NLog
+    ```
+* To publish the app to Linux envirorment:
+    ```bash
+    dotnet publish --self-contained -r linux-x64 -c Release
+    ```
+* To publish the app to MacOS envirorment:
+    ```bash
+    dotnet publish --self-contained -r osx.10.14-x64 -c Release
+    ```
+* To publish the app to MacOS envirorment:
+    ```bash
+    dotnet publish --self-contained -r win10-x64 -c Release
     ```
