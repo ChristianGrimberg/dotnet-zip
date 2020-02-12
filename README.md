@@ -14,3 +14,8 @@ This app is development with .NET Core 3.1 Framework.
     ```bash
     dotnet run <source> <target>.zip
     ```
+### Optional steps
+* Add Nlog Package to your local copy of this repo
+    ```bash
+    dotnet add package NLog
+    ```
