@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Zipper Library</Description>
+    <Authors>Christian Grimberg</Authors>
+    <Product>ZipperLibrary</Product>
+    <PackageId>ZipperLibrary</PackageId>
   </PropertyGroup>
 
 </Project>
