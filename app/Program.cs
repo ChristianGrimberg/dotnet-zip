@@ -24,7 +24,7 @@ namespace dotnet_zip
 
             try
             {
-                ZipFile.CreateFromDirectory(source, target);
+                //ZipFile.CreateFromDirectory(source, target);
             }
             catch (System.Exception ex)
             {

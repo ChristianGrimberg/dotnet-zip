@@ -1,2 +1,5 @@
-bin/
-obj/
+app/bin/*
+app/obj/*
+zipper/bin/*
+zipper/obj/*
+.DS_Store

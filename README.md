@@ -40,3 +40,12 @@ This app is development with .NET Core 3.1 Framework.
     ```bash
     dotnet publish --self-contained -r win10-x64 -c Release
     ```
+### Steps to develop the Zipper App solution
+```bash
+dotnet new classlib -n zipper
+dotnet new console -n app
+dotnet new sln
+dotnet sln add zipper
+dotnet sln add app
+dotnet add app reference zipper
+```
