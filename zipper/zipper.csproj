@@ -5,7 +5,9 @@
     <Description>Zipper Library</Description>
     <Authors>Christian Grimberg</Authors>
     <Product>ZipperLibrary</Product>
-    <PackageId>ZipperLibrary</PackageId>
+    <PackageId>LinkedIn.DotNetCoreEssencial.ZipperLibrary</PackageId>
+    <PackageLicenceExpression>MIT</PackageLicenceExpression>
+    <RepositoryUrl>https://github.com/ChristianGrimberg/dotnet-zip</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

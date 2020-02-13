@@ -49,3 +49,8 @@ dotnet sln add zipper
 dotnet sln add app
 dotnet add app reference zipper
 ```
+### Pack Class Library like NuGet Package
+```bash
+dotnet pack -c Release
+```
+Then, you need to go to Release folder and find the nupkg file extension.
