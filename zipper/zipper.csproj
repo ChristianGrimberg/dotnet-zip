@@ -7,7 +7,6 @@
     <Product>ZipperLibrary</Product>
     <PackageId>LinkedIn.DotNetCoreEssencial.ZipperLibrary</PackageId>
     <PackageLicenceExpression>MIT</PackageLicenceExpression>
-    <RepositoryUrl>https://github.com/ChristianGrimberg/dotnet-zip</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
