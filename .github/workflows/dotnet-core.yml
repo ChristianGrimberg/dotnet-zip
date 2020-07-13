@@ -1,10 +1,7 @@
-name: .NET Core
+name: .NET Core Build Test
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  push
 
 jobs:
   build:
