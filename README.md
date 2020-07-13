@@ -1,3 +1,4 @@
+![.NET Core](https://github.com/ChristianGrimberg/dotnet-zip/workflows/.NET%20Core/badge.svg)
 # My first .NET Core Console Application
 This app is development with .NET Core 3.1 Framework.
 ## How it works
