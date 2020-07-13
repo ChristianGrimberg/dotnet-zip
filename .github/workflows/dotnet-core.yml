@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: Test 1
-      run: dotnet test --no-restore --verbosity normal
-    - name: Test 2
+    - name: PreTest
       run: touch example.txt && dotnet run example.txt example.zip
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
