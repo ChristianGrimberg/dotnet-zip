@@ -9,7 +9,7 @@ This app is development with .NET Core 3.1 Framework.
     ```
 * After that clone this repo with Git:
     ```bash
-    git clone https://github.com/ChristianGrimberg/dotnet-zip.git
+    git clone https://github.com/ChristianGrimberg/dotnet-zip-app.git
     ```
 * Add Nlog Package with NuGet to your local copy of this repo
     ```bash
