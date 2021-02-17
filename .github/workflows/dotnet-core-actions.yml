@@ -1,4 +1,4 @@
-name: .NET Core Build Test
+name: .NET Core Build & Test application
 
 on:
   push
@@ -20,5 +20,3 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Run
-      run: dotnet run
