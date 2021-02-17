@@ -33,18 +33,18 @@ This app is development with .NET Core 3.1 Framework.
     ```bash
     dotnet publish --self-contained -r linux-x64 -c Release
     ```
-* To publish the app to MacOS envirorment:
+* To publish the app to MacOS Big Sur envirorment:
     ```bash
     dotnet publish --self-contained -r osx.11.0-x64 -c Release
     ```
-* To publish the app to MacOS envirorment:
+* To publish the app to Windows 10 envirorment:
     ```bash
     dotnet publish --self-contained -r win10-x64 -c Release
     ```
 ### Steps to develop the Zipper App solution
 ```bash
 dotnet new classlib -n zipper
-dotnet new console -n app
+dotnet new console -n dotnet-zip-app
 dotnet new sln
 dotnet sln add zipper
 dotnet sln add app
