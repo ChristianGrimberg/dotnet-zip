@@ -6,4 +6,8 @@
     <RootNamespace>dotnet_zip_app</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.7" />
+  </ItemGroup>
+
 </Project>
