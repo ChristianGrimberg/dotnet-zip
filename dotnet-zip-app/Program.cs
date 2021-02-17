@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO.Compression;
 
 namespace dotnet_zip_app
 {
@@ -6,7 +7,20 @@ namespace dotnet_zip_app
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string source = null;
+            string target = null;
+
+            if(args == null || args.Length != 2)
+            {
+                Console.WriteLine("Use: dotnet-zip-app <source> <target>.zip");
+            }
+            else
+            {
+                source = args[0];
+                target = args[1];
+
+                ZipFile.CreateFromDirectory(source, target);
+            }
         }
     }
 }
