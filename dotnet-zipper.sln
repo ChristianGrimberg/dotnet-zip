@@ -3,8 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zipper", "zipper\zipper.csproj", "{5C0D6EE6-9A48-49FB-A1B4-77D53F1BD67C}"
-EndProject
+# Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zipper", "zipper\zipper.csproj", "{5C0D6EE6-9A48-49FB-A1B4-77D53F1BD67C}"
+# EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-zip-app", "dotnet-zip-app\app.csproj", "{CCB47A42-3CAB-41D1-89F4-718165FEEDE3}"
 EndProject
 Global
