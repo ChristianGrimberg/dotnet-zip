@@ -35,7 +35,7 @@ This app is development with .NET Core 3.1 Framework.
     ```
 * To publish the app to MacOS envirorment:
     ```bash
-    dotnet publish --self-contained -r osx.10.14-x64 -c Release
+    dotnet publish --self-contained -r osx.11.0-x64 -c Release
     ```
 * To publish the app to MacOS envirorment:
     ```bash

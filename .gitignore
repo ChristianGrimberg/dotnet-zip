@@ -1,5 +1,3 @@
-dotnet-zip-app/bin/*
-dotnet-zip-app/obj/*
-zipper/bin/*
-zipper/obj/*
+*/bin/*
+*/obj/*
 .DS_Store

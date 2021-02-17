@@ -4,6 +4,11 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>dotnet_zip_app</RootNamespace>
+    <Description>Compress Folder App</Description>
+    <Authors>Christian Grimberg</Authors>
+    <Company>Novocap S.A.</Company>
+    <Product>dotnet-zip-app</Product>
+    <PackageId>dotnet-zip-app</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
