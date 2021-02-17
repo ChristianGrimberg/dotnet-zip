@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO.Compression;
 using NLog;
+using zipper;
 
 namespace dotnet_zip_app
 {
@@ -24,7 +24,7 @@ namespace dotnet_zip_app
 
                 try
                 {
-                    ZipFile.CreateFromDirectory(source, target);
+                    ZipperLogic.Zip(source, target);
                 }
                 catch (System.Exception ex)
                 {
