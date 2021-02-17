@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/ChristianGrimberg/dotnet-zip/workflows/.NET%20Core/badge.svg)
+![.NET Core Build & Test application](https://github.com/ChristianGrimberg/dotnet-zip-app/workflows/.NET%20Core%20Build%20&%20Test%20application/badge.svg?branch=main)
 # My first .NET Core Console Application
 This app is development with .NET Core 3.1 Framework.
 ## How it works
