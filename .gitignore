@@ -1,5 +1,5 @@
-app/bin/*
-app/obj/*
+dotnet-zip-app/bin/*
+dotnet-zip-app/obj/*
 zipper/bin/*
 zipper/obj/*
 .DS_Store

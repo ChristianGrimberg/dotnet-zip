@@ -13,7 +13,7 @@ This app is development with .NET Core 3.1 Framework.
     ```
 * Add Nlog Package with NuGet to your local copy of this repo
     ```bash
-    cd dotnet-zip/
+    cd dotnet-zip-app/
     dotnet add package NLog
     ```
 * To build to test if works on your system:
