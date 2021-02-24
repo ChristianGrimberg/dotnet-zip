@@ -4,7 +4,7 @@ on:
   push
 
 jobs:
-  Restore-Build-Test:
+  Restore-Build-Test-Publish-Run:
 
     runs-on: ubuntu-latest
 
@@ -20,3 +20,9 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Publish
+      run: dotnet publish --self-contained -r linux-x64 -c Release
+    - name: Run
+      run: |
+        pwd
+        dotnet app/bin/Release/net5.0/linux-x64/app.dll
