@@ -23,6 +23,4 @@ jobs:
     - name: Publish
       run: dotnet publish --self-contained -r linux-x64 -c Release
     - name: Run
-      run: |
-        pwd
-        dotnet app/bin/Release/net5.0/linux-x64/app.dll
+      run: dotnet app/bin/Release/net5.0/linux-x64/app.dll
