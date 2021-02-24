@@ -45,7 +45,7 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "dotnetzip:dev",
+                "tag": "dotnetzipapp:dev",
                 "target": "base",
                 "dockerfile": "${workspaceFolder}/app/Dockerfile",
                 "context": "${workspaceFolder}",
@@ -62,7 +62,7 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "dotnetzip:latest",
+                "tag": "dotnetzipapp:latest",
                 "dockerfile": "${workspaceFolder}/app/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
