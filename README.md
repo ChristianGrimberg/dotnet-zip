@@ -1,4 +1,4 @@
-![.NET Core Build & Test application](https://github.com/ChristianGrimberg/dotnet-zip-app/workflows/.NET%20Core%20Build%20&%20Test%20application/badge.svg?branch=main)
+[![.NET Core Build, Test, Publish and Run application](https://github.com/ChristianGrimberg/dotnet-zip-app/actions/workflows/dotnet-core-actions.yml/badge.svg?branch=main)](https://github.com/ChristianGrimberg/dotnet-zip-app/actions/workflows/dotnet-core-actions.yml)
 # My first .NET Core Console Application
 This app is development with .NET Core 3.1 Framework.
 ## How it works
