@@ -1,10 +1,10 @@
-name: .NET Core Build & Test application
+name: .NET Core Build, Test, Publish and Run application
 
 on:
   push
 
 jobs:
-  Restore-Build-Test-Publish-Run:
+  Build-Test-Publish-Run:
 
     runs-on: ubuntu-18.04
 

@@ -3,10 +3,7 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["dotnet-zip-app.sln", "."]
-COPY ["app/app.csproj", "app/", "app/Program.cs", "app/"]
-COPY ["zipper/zipper.csproj", "zipper/", "zipper/ZipperLogic.cs", "zipper/"]
-COPY ["zipper.test/zipper.test.csproj", "zipper.test/", "zipper.test/UnitTest.cs", "zipper.test/"]
+COPY . .
 RUN dotnet restore
 RUN dotnet build --configuration Release --no-restore
 
