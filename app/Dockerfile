@@ -3,16 +3,20 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["app/app.csproj", "app/"]
-RUN dotnet restore "app/app.csproj"
-COPY . .
-WORKDIR "/src/app"
-RUN dotnet build "app.csproj" -c Release -o /app/build
+COPY ["dotnet-zip-app.sln", "."]
+COPY ["app/app.csproj", "app/", "app/Program.cs", "app/"]
+COPY ["zipper/zipper.csproj", "zipper/", "zipper/ZipperLogic.cs", "zipper/"]
+COPY ["zipper.test/zipper.test.csproj", "zipper.test/", "zipper.test/UnitTest.cs", "zipper.test/"]
+RUN dotnet restore
+RUN dotnet build --configuration Release --no-restore
+
+FROM build AS test
+RUN dotnet test --no-restore --verbosity normal
 
 FROM build AS publish
-RUN dotnet publish "app.csproj" -c Release -o /app/publish
+RUN dotnet publish --self-contained -r linux-x64 -c Release
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=publish /src/app/bin/Release/net5.0/linux-x64/ .
 ENTRYPOINT ["dotnet", "app.dll"]
