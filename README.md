@@ -55,3 +55,16 @@ dotnet add app reference zipper
 dotnet pack -c Release
 ```
 Then, you need to go to Release folder and find the nupkg file extension.
+## Using Docker Containers
+To build the image you can use this:
+```bash
+docker-compose build
+````
+To run the application with parameters:
+```bash
+docker-compose run app <source> <target.zip>
+```
+To stop the container and remove the app image:
+```bash
+docker-compose down --rmi all
+```

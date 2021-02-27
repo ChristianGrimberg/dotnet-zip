@@ -30,6 +30,8 @@ namespace dotnet_zip_app
                 {
                     LogManager.GetCurrentClassLogger().Error(ex.Message);
                 }
+
+                Console.WriteLine("The program has finished.");
             }
         }
 
